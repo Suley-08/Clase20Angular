@@ -1,0 +1,16 @@
+<div class="container rounded my-5">
+    <div class="row">
+        <div class="col-md-12 my-3">
+            <h4 class="text-center">{{title  | uppercase }}</h4>
+        </div>
+        <div class="col-md-12 mb-3">
+            <button type="button" (click)="clickMostrar()" class="btn btn-primary">Mostrar Usuarios</button>
+        </div>
+        <hr>
+        <div class="col-md-12">
+            <ul *ngFor="let usuario of usuarios " class="list-group">
+                <li class="list-group-item">{{usuario.name}}</li>
+              </ul>
+        </div>
+    </div>
+</div>
